@@ -76,9 +76,11 @@ function move() {
   snake.unshift(head);
   if (head.x === food.x && head.y === food.y) {
     food = generateFood();
-    clearInterval(); //clear past interval
+    increaseSpeed();
+    clearInterval(gameInterval); //clear past interval
     gameInterval = setInterval(() => {
       move();
+      //checkCollision();
       draw();
     }, gameSpeedDelay);
   } else {
@@ -130,3 +132,9 @@ function handleKeyPress(event) {
 }
 
 document.addEventListener("keydown", handleKeyPress);
+
+function increaseSpeed() {
+  if (gameSpeedDelay > 150) {
+    gameSpeedDelay -= 5;
+  }
+}
