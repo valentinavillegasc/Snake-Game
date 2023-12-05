@@ -3,7 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:ital,wght@0,200;1,300&family=Julius+Sans+One&family=VT323&display=swap");
+    </style>
     <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <div class="scores">
+        <h1 id="score">000</h1>
+        <h1 id="highScore">000</h1>
+      </div>
+      <div class="game-border-1">
+        <div class="game-border-2">
+          <div class="game-border-3">
+            <div id="game-board"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 id="instruction-text">Press spacebar to start the gamme</h1>
+    <img src="./logo.png" alt="snake-logo" id="logo" />
+  </body>
 </html>
