@@ -70,8 +70,7 @@ body,
   display: none;
 }
 
-.game-border-3,
-#logo {
+.game-border-3 {
   background-color: #c4cfa3;
 }
 
